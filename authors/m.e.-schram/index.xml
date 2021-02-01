@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>M.E. Schram | Guillem Hurault</title>
+    <link>https://ghurault.github.io/authors/m.e.-schram/</link>
+      <atom:link href="https://ghurault.github.io/authors/m.e.-schram/index.xml" rel="self" type="application/rss+xml" />
+    <description>M.E. Schram</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Dec 2020 16:58:59 +0000</lastBuildDate>
+    <image>
+      <url>https://ghurault.github.io/images/icon_hu737d63cf88dcf37a2a04edb2be0797e0_85138_512x512_fill_lanczos_center_2.png</url>
+      <title>M.E. Schram</title>
+      <link>https://ghurault.github.io/authors/m.e.-schram/</link>
+    </image>
+    
+    <item>
+      <title>Can serum biomarkers predict the outcome of systemic therapy for atopic dermatitis?</title>
+      <link>https://ghurault.github.io/publication/2020-ssm-biomarkers/</link>
+      <pubDate>Tue, 01 Dec 2020 16:58:59 +0000</pubDate>
+      <guid>https://ghurault.github.io/publication/2020-ssm-biomarkers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Relationship and probabilistic stratification of EASI and oSCORAD severity scores for atopic dermatitis</title>
+      <link>https://ghurault.github.io/publication/2018-conversion/</link>
+      <pubDate>Tue, 26 Jun 2018 12:00:00 +0100</pubDate>
+      <guid>https://ghurault.github.io/publication/2018-conversion/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

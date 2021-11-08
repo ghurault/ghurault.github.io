@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>E. Domínguez-Hüttinger | Guillem Hurault</title>
+    <link>https://ghurault.github.io/authors/e.-dom%C3%ADnguez-h%C3%BCttinger/</link>
+      <atom:link href="https://ghurault.github.io/authors/e.-dom%C3%ADnguez-h%C3%BCttinger/index.xml" rel="self" type="application/rss+xml" />
+    <description>E. Domínguez-Hüttinger</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 18 Jan 2020 12:00:00 +0100</lastBuildDate>
+    <image>
+      <url>https://ghurault.github.io/images/icon_hu737d63cf88dcf37a2a04edb2be0797e0_85138_512x512_fill_lanczos_center_2.png</url>
+      <title>E. Domínguez-Hüttinger</title>
+      <link>https://ghurault.github.io/authors/e.-dom%C3%ADnguez-h%C3%BCttinger/</link>
+    </image>
+    
+    <item>
+      <title>Personalised prediction of daily eczema severity scores using a mechanistic machine learning model</title>
+      <link>https://ghurault.github.io/publication/2020-mechanistic-ml/</link>
+      <pubDate>Sat, 18 Jan 2020 12:00:00 +0100</pubDate>
+      <guid>https://ghurault.github.io/publication/2020-mechanistic-ml/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

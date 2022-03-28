@@ -8,7 +8,7 @@
 <link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
 <link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media=print onload="this.media='all'">
 <meta name=author content="Guillem Hurault">
-<meta name=description content>
+<meta name=description content="Prediction of the patient-pecific dynamic evolution of AD severity by EczemaPred will help manage and anticipate fluctuating disease symptoms, contributing to personalised medicine.">
 <link rel=alternate hreflang=en-us href=https://ghurault.github.io/publication/2022-eczemapred/>
 <meta name=theme-color content="#1565c0">
 <link rel=stylesheet href=/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css media=print onload="this.media='all'">
@@ -28,17 +28,17 @@
 <meta property="og:site_name" content="Guillem Hurault">
 <meta property="og:url" content="https://ghurault.github.io/publication/2022-eczemapred/">
 <meta property="og:title" content="EczemaPred: A computational framework for personalised prediction of eczema severity dynamics | Guillem Hurault">
-<meta property="og:description" content><meta property="og:image" content="https://ghurault.github.io/media/sharing.jpeg">
+<meta property="og:description" content="Prediction of the patient-pecific dynamic evolution of AD severity by EczemaPred will help manage and anticipate fluctuating disease symptoms, contributing to personalised medicine."><meta property="og:image" content="https://ghurault.github.io/media/sharing.jpeg">
 <meta property="twitter:image" content="https://ghurault.github.io/media/sharing.jpeg"><meta property="og:locale" content="en-us">
 <meta property="article:published_time" content="2022-03-15T00:00:00+00:00">
-<meta property="article:modified_time" content="2022-03-15T00:00:00+00:00">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://ghurault.github.io/publication/2022-eczemapred/"},"headline":"EczemaPred: A computational framework for personalised prediction of eczema severity dynamics","datePublished":"2022-03-15T00:00:00Z","dateModified":"2022-03-15T00:00:00Z","author":{"@type":"Person","name":"Guillem Hurault"},"publisher":{"@type":"Organization","name":"Guillem Hurault","logo":{"@type":"ImageObject","url":"https://ghurault.github.io/media/icon_hu737d63cf88dcf37a2a04edb2be0797e0_85138_192x192_fill_lanczos_center_3.png"}},"description":""}</script>
+<meta property="article:modified_time" content="2022-03-28T00:00:00+00:00">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://ghurault.github.io/publication/2022-eczemapred/"},"headline":"EczemaPred: A computational framework for personalised prediction of eczema severity dynamics","datePublished":"2022-03-15T00:00:00Z","dateModified":"2022-03-28T00:00:00Z","author":{"@type":"Person","name":"Guillem Hurault"},"publisher":{"@type":"Organization","name":"Guillem Hurault","logo":{"@type":"ImageObject","url":"https://ghurault.github.io/media/icon_hu737d63cf88dcf37a2a04edb2be0797e0_85138_192x192_fill_lanczos_center_3.png"}},"description":"Prediction of the patient-pecific dynamic evolution of AD severity by EczemaPred will help manage and anticipate fluctuating disease symptoms, contributing to personalised medicine."}</script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin=anonymous></script>
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin=anonymous>
 <script>window.addEventListener("load",function(){window.cookieconsent.initialise({palette:{popup:{background:"#1565c0",text:"rgb(255, 255, 255)"},button:{background:"rgb(255, 255, 255)",text:"#1565c0"}},theme:"classic",content:{message:"This website uses cookies to ensure you get the best experience on our website.",dismiss:"Got it!",link:"Learn more",href:"https://www.cookiesandyou.com"}})})</script>
 <title>EczemaPred: A computational framework for personalised prediction of eczema severity dynamics | Guillem Hurault</title>
 </head>
-<body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=b9f86b30cb57d5f89289173ddd95e49f>
+<body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=09b4960888282b2d38417354dab34d4f>
 <script src=/js/wowchemy-init.min.2da3b1fa37e894630bf6de39b1b694b3.js></script>
 <aside class=search-modal id=search>
 <div class=container>
@@ -139,6 +139,9 @@ March 2022
 </span>
 </div>
 <div class="btn-links mb-3">
+<a href=# class="btn btn-outline-primary btn-page-header js-cite-modal" data-filename=/publication/2022-eczemapred/cite.bib>
+Cite
+</a>
 <a class="btn btn-outline-primary btn-page-header" href=https://github.com/ghurault/EczemaPredPOSCORAD target=_blank rel=noopener>
 Code
 </a>
@@ -150,6 +153,8 @@ R Package</a>
 </div>
 </div>
 <div class=article-container>
+<h3>Abstract</h3>
+<p class=pub-abstract><strong>Background</strong>: Atopic dermatitis (AD) is a chronic inflammatory skin disease leading to substantial quality of life impairment with heterogeneous treatment responses. People with AD would benefit from personalised treatment strategies, whose design requires predicting how AD severity evolves for each individual. Objective: This study aims to develop a computational framework for personalised prediction of AD severity dynamics. <strong>Methods</strong>: We introduced EczemaPred, a computational framework to predict patient-dependent dynamic evolution of AD severity using Bayesian state-space models that describe latent dynamics of AD severity items and how they are measured. We used EczemaPred to predict the dynamic evolution of validated patient-oriented scoring atopic dermatitis (PO-SCORAD) by combining predictions from the models for the nine severity items of PO-SCORAD (six intensity signs, extent of eczema, and two subjective symptoms). We validated this approach using longitudinal data from two independent studies: a published clinical study in which PO-SCORAD was measured twice weekly for 347 AD patients over 17 weeks, and another one in which PO-SCORAD was recorded daily by 16 AD patients for 12 weeks. <strong>Results</strong>: EczemaPred achieved good performance for personalised predictions of PO-SCORAD and its severity items daily to weekly. EczemaPred outperformed standard time-series forecasting models such as a mixed effect autoregressive model. The uncertainty in predicting PO-SCORAD was mainly attributed to that in predicting intensity signs (75% of the overall uncertainty). <strong>Conclusions</strong>: EczemaPred serves as a computational framework to make a personalised prediction of AD severity dynamics relevant to clinical practice. EczemaPred is available as an R package.</p>
 <div class=row>
 <div class=col-md-1></div>
 <div class=col-md-10>

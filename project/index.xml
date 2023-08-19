@@ -15,7 +15,6 @@ The models demonstrated good performance to predict the Patient-Oriented SCOring
 We observed that treatment effects and recommendations could be confounded by the clinical phenotype of patients.
 We also pretrained our model using historical data and combined clinical and self-assessments.&lt;/p>
 &lt;p>In conclusion, we have demonstrated the feasibility and the challenges of a data-driven personalised management of AD severity.&lt;/p>
-&lt;p>&lt;strong>The link to my thesis will be made available soon&lt;/strong>&lt;/p>
 &lt;h2 id="references">References&lt;/h2>
 &lt;div class="footnotes" role="doc-endnotes">
 &lt;hr>
@@ -36,9 +35,9 @@ We also pretrained our model using historical data and combined clinical and sel
 &lt;em>Clinical and Translational Allergy, vol. 11, no. 2&lt;/em>, 2021&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li id="fn:4">
-&lt;p>&lt;a href="https://doi.org/10.1101/2020.12.02.20242404" target="_blank" rel="noopener">&lt;strong>G. Hurault&lt;/strong>, E. Roekevisch, M.E. Schram, K. Szegedi, S. Kezic, M.A. Middelkamp-Hup, P.I. Spuls and R. J. Tanaka,
-&amp;ldquo;Can serum biomarkers predict the outcome of systemic therapy for atopic dermatitis?&amp;rdquo;,
-&lt;em>MedRxiv (preprint)&lt;/em>, 2020.&lt;/a>&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://doi.org/10.1002/ski2.77" target="_blank" rel="noopener">&lt;strong>G. Hurault&lt;/strong>, E. Roekevisch, M.E. Schram, K. Szegedi, S. Kezic, M.A. Middelkamp-Hup, P.I. Spuls and R. J. Tanaka,
+&amp;ldquo;Can serum biomarkers predict the outcome of systemic immunosuppressive therapy in adult atopic dermatitis patients?&amp;rdquo;,
+&lt;em>Skin and Health Disease&lt;/em>, vol. 2, no. 1, p. e77, 2022.&lt;/a>&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;li id="fn:5">
 &lt;p>&lt;a href="https://doi.org/10.1002/clt2.12140" target="_blank" rel="noopener">&lt;strong>G. Hurault&lt;/strong>, J-F Stalder, S. Mery, A. Delarue, M. Saint Aroma, G. Josse and R. J. Tanaka,

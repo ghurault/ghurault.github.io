@@ -1,10 +1,25 @@
 version: 2
 updates:
-  - package-ecosystem: "github-actions" # See documentation for possible values
-    directory: "/" # Location of package manifests
-    schedule:
-      interval: "monthly"
-  - package-ecosystem: "devcontainers"
+  - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "monthly"
+
+  # Bumps the pinned hugomods/hugo tag in .devcontainer/Dockerfile.
+  # Note: when it does, `build.hugo_version` in hugoblox.yaml needs the same
+  # bump by hand, since that is what CI reads.
+  - package-ecosystem: "docker"
+    directory: "/.devcontainer"
+    schedule:
+      interval: "monthly"
+
+  # Tailwind CSS, Pagefind and the rest of the Node build dependencies.
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+
+  # Note: deliberately no `gomod` entry. The Hugo Blox modules in go.mod are
+  # updated by .github/workflows/upgrade.yml, which also applies the project's
+  # automatic content migrations; adding Dependabot here would duplicate those
+  # pull requests without the migrations.

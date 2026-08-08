@@ -1,113 +1,192 @@
-# SITE SETUP
-# Guide: https://wowchemy.com/docs/getting-started/
-# Documentation: https://wowchemy.com/docs/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# ══════════════════════════════════════════════════════════════════════════════
+# HUGO BLOX CONFIGURATION
+# Schema: hugoblox.com/schema/v2
+# Tutorial: https://docs.hugoblox.com/tutorial/
+# Documentation: https://docs.hugoblox.com/
+# ══════════════════════════════════════════════════════════════════════════════
+hugoblox:
+  schema: "2.0"
 
-# Appearance
+  # ────────────────────────────────────────────────────────────────────────────
+  # IDENTITY
+  # Site-level branding (for the personal profile, see data/authors/admin.yaml)
+  # ────────────────────────────────────────────────────────────────────────────
+  identity:
+    name: "Guillem Hurault"
+    # Legal entity for copyright notices (defaults to name if not set)
+    organization: ""
+    # Schema.org type for structured data
+    type: person # person | organization | local_business
+    tagline: ""
+    description: "Guillem Hurault personal website"
+    social:
+      twitter: "ghurault" # Twitter/X handle for Twitter Cards (without @)
 
-appearance:
-  theme_day: minimal
-  theme_night: minimal
-  font: native
-  font_size: L
+  # ────────────────────────────────────────────────────────────────────────────
+  # THEME
+  # Color and visual design system
+  # ────────────────────────────────────────────────────────────────────────────
+  theme:
+    # Mode: 'light', 'dark', or 'system' (follows OS preference)
+    mode: system
+    # Theme pack: name from data/themes/ in the blox module
+    pack: "minimal"
+    colors:
+      primary: ""
+      secondary: ""
+      neutral: ""
 
-# SEO
+  # ────────────────────────────────────────────────────────────────────────────
+  # TYPOGRAPHY
+  # ────────────────────────────────────────────────────────────────────────────
+  typography:
+    # `system` uses the OS's native font stack (equivalent to the old
+    # `appearance.font: native`). Other packs: academic, editorial, modern, ...
+    pack: "system"
 
-marketing:
-  seo:
-    site_type: Person
-    # local_business_type: ''
-    org_name: '' # Default to website name in config.yaml
-    description: 'Guillem Hurault personal website'
-    twitter: 'ghurault'
-  analytics:
-    google_analytics: 'G-DYGYFM7T03'
-    google_tag_manager: 'G-DYGYFM7T03'
-    baidu_tongji: ''
-  verification:
-    google: ''
-    baidu: ''
+  # ────────────────────────────────────────────────────────────────────────────
+  # LAYOUT
+  # ────────────────────────────────────────────────────────────────────────────
+  layout:
+    # Border radius: 'none', 'sm', 'md', 'lg', or 'full'
+    radius: "md"
+    # Spacing density: 'compact', 'comfortable', or 'spacious'
+    spacing: "spacious"
+    avatar_shape: circle # circle | square | rounded
 
-# Site header
-
-header:
-  navbar:
+  # ────────────────────────────────────────────────────────────────────────────
+  # HEADER
+  # ────────────────────────────────────────────────────────────────────────────
+  header:
     enable: true
-    align: l
-    show_logo: true
-    show_language: false
-    show_day_night: true
-    show_search: true
-    highlight_active_link: true
+    style: navbar # navbar | navbar-simple | minimal
+    sticky: true
+    align: left # left | center | right
+    search: true
+    theme_toggle: true
+    # Lets visitors pick any theme pack; off to keep the site's own look.
+    theme_picker: false
+    # Single-language site.
+    language_switcher: false
+    cta:
+      enable: false
+      text: ""
+      url: ""
 
-# Site footer
+  # ────────────────────────────────────────────────────────────────────────────
+  # FOOTER
+  # ────────────────────────────────────────────────────────────────────────────
+  footer:
+    style: minimal # minimal | columns | centered
+    language_switcher: false
+    text: ""
 
-footer:
+  # ────────────────────────────────────────────────────────────────────────────
+  # COPYRIGHT
+  # ────────────────────────────────────────────────────────────────────────────
   copyright:
-    notice: '© {year} Guillem Hurault. This work is licensed under {license}'
+    # Supports {year}, {name} and {license} placeholders.
+    notice: "© {year} {name}. This work is licensed under {license}"
     license:
-      enable: true
+      type: cc # cc | custom
       allow_derivatives: false
       share_alike: true
       allow_commercial: false
 
-# Localization
+  # ────────────────────────────────────────────────────────────────────────────
+  # SEO
+  # ────────────────────────────────────────────────────────────────────────────
+  seo:
+    # Browser tab title override (defaults to identity.name if not set)
+    title: ""
+    # AI/LLM crawler guidance (llms.txt)
+    ai:
+      allow:
+        - /
+      disallow: []
+      note: "Guidance for AI crawlers - customize to match your public content."
+      contact: ""
 
-locale:
-  date_format: '02 Jan 2006'
-  time_format: '15:04'
-  address_format: en-gb
+  # ────────────────────────────────────────────────────────────────────────────
+  # CONTENT
+  # ────────────────────────────────────────────────────────────────────────────
+  content:
+    math:
+      enable: false
+    toc:
+      enable: true
+    reading_time:
+      enable: true
+    citations:
+      style: apa # apa | mla | chicago | ieee
 
-# Site features
-
-features:
-  syntax_highlighter:
-    enable: true
-    extra_languages:
-      - r
-      - latex
-  math:
-    enable: false
-  privacy_pack:
-    enable: true
-  repository:
-    url: 'https://github.com/ghurault/personal-website'
-    content_dir: content
-    branch: master
-  avatar:
-    gravatar: false
-    shape: circle
-  comment:
-    provider: ''
-    disqus:
-      shortname: ''
-      show_count: true
-    commento:
-      url: ''
+  # ────────────────────────────────────────────────────────────────────────────
+  # SEARCH
+  # Backed by Pagefind: the index is generated by `pnpm run pagefind` after the
+  # Hugo build, so search is empty when running `hugo server` locally.
+  # ────────────────────────────────────────────────────────────────────────────
   search:
-    provider: wowchemy
-    algolia:
-      app_id: ''
-      api_key: ''
-      index_name: ''
-      show_logo: false
-  map:
-    provider: 'mapnik'
-    api_key: ''
-    zoom: 15
-
-# Extensions
-
-extensions:
-  cms:
-    branch: master
-    local_backend: false
-  isotope:
-    # Enable if you use the Portfolio widget or Publication filter
     enable: true
-  academicons:
+    suggestions: []
+    quick_actions: []
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # COMMENTS
+  # ────────────────────────────────────────────────────────────────────────────
+  comments:
+    enable: false
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # ANALYTICS
+  # ────────────────────────────────────────────────────────────────────────────
+  analytics:
+    google:
+      measurement_id: "G-DYGYFM7T03" # Google Analytics 4: G-XXXXXXXXXX
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # VERIFICATION
+  # ────────────────────────────────────────────────────────────────────────────
+  verification:
+    google: ""
+    bing: ""
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # REPOSITORY
+  # Source code repository for "Edit this page" links
+  # ────────────────────────────────────────────────────────────────────────────
+  repository:
     enable: true
-    
-icon:
-  pack:
-    ai: true
+    # TODO: change to https://github.com/ghurault/ghurault.github.io once the
+    # repos are consolidated (see the migration runbook in README.md).
+    url: 'https://github.com/ghurault/personal-website'
+    branch: main
+    content_dir: content
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # LOCALE
+  # ────────────────────────────────────────────────────────────────────────────
+  locale:
+    date_format: "02 Jan 2006" # Go time format
+    time_format: "15:04"
+    address_format: en-gb
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # PRIVACY
+  # ────────────────────────────────────────────────────────────────────────────
+  privacy:
+    enable: true
+    anonymize_analytics: true
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # DEBUG
+  # ────────────────────────────────────────────────────────────────────────────
+  debug:
+    enable: false
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # PREMIUM
+  # ────────────────────────────────────────────────────────────────────────────
+  pro:
+    # Keep the "Powered by HugoBlox" attribution to support the open source project.
+    hide_attribution: false
+    affiliate_code: ""

@@ -5,6 +5,26 @@
 ############################
 
 imports:
-  - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
-  - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-reveal
-  - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5
+  # Note: upstream also imports `integrations/netlify` (emits Netlify
+  # `_headers`/`_redirects`) and `slides` (Reveal.js decks). Neither is used
+  # here - this site deploys to GitHub Pages and has no slide decks.
+  - path: github.com/HugoBlox/kit/modules/blox
+
+# Install any Hugo Blox within the `hugo-blox/blox/` folder
+mounts:
+  - source: hugo-blox/blox/community
+    target: layouts/_partials/blox/community/
+    files:
+      - '**.html'
+  - source: hugo-blox/blox/all-access
+    target: layouts/_partials/blox/
+    files:
+      - '**.html'
+  - source: hugo-blox/blox
+    target: assets/dist/community/blox/
+    files:
+      - '**.css'
+  - source: layouts
+    target: layouts
+  - source: assets
+    target: assets

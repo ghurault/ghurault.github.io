@@ -13,9 +13,9 @@ main:
   - name: Publications
     url: /publications/
     weight: 30
-  - name: Public speaking
-    url: /events/
-    weight: 40
+  # - name: Public speaking
+  #   url: /events/
+  #   weight: 40
   - name: Contact
     url: /contact/
     weight: 50

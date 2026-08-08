@@ -1,17 +1,29 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/debian
+// For format details, see https://aka.ms/devcontainer.json. For config options, see
+// https://containers.dev/implementors/json_reference/
 {
-  "name": "Debian",
-  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "image": "ghcr.io/peaceiris/hugo:v0.120.3-mod",
+  "name": "Hugo Blox (Academic CV)",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
 
-  // Features to add to the dev container. More info: https://containers.dev/features.
-  // "features": {},
+  // Install Node and Hugo module dependencies once the container is created.
+  "postCreateCommand": "pnpm install --frozen-lockfile && hugo mod download",
 
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // Hugo's development server.
   "forwardPorts": [1313],
+  "portsAttributes": {
+    "1313": {
+      "label": "Hugo Server"
+    }
+  },
 
-  // Configure tool-specific properties.
+  // Persist the pnpm store and the Go module cache (which is where Hugo caches
+  // its modules) so rebuilding the container doesn't re-download everything.
+  "mounts": [
+    "source=personal-website-pnpm,target=/root/.local/share/pnpm,type=volume",
+    "source=personal-website-gomod,target=/root/go/pkg/mod,type=volume"
+  ],
+
   "customizations": {
     "vscode": {
       "extensions": [
@@ -23,7 +35,4 @@
       ]
     }
   }
-
-  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-  // "remoteUser": "root"
 }

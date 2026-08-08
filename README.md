@@ -15,8 +15,8 @@ the [Hugo Blox Kit](https://github.com/HugoBlox/kit) `blox` module — and
 ### Development
 
 Everything runs in the devcontainer (`.devcontainer/`), so no Hugo, Go, Node or pnpm
-installation is needed on the host. Open the folder in VS Code and *Reopen in
-Container*, then:
+installation is needed on the host. Open the folder in VS Code and _Reopen in
+Container_, then:
 
 ```bash
 pnpm run dev
@@ -29,9 +29,9 @@ already ships Hugo Extended, Go, Node and git, with pnpm added on top.
 
 Two version pins have to be kept in step by hand:
 
-| File | Key |
-| --- | --- |
-| `hugoblox.yaml` | `build.hugo_version` — what CI installs |
+| File                       | Key                                      |
+| -------------------------- | ---------------------------------------- |
+| `hugoblox.yaml`            | `build.hugo_version` — what CI installs  |
 | `.devcontainer/Dockerfile` | the `hugomods/hugo:debian-<version>` tag |
 
 > [!WARNING]
@@ -54,7 +54,7 @@ mount point.
 ### Editing the content
 
 - The **homepage** is assembled from the `sections:` list in
-  [`content/_index.md`](content/_index.md). Each entry is a *blox* (block); the
+  [`content/_index.md`](content/_index.md). Each entry is a _blox_ (block); the
   available blocks live in the Kit module under `modules/blox/blox/`.
 - **Publications**, **projects** and **events** are page bundles under
   [`content/publications`](content/publications),
@@ -86,46 +86,8 @@ required. `build.yml` also runs on pull requests as a build check.
 
 [`upgrade.yml`](.github/workflows/upgrade.yml) opens a weekly pull request that bumps
 the Hugo Blox modules and applies any content migrations. It needs
-*Settings → Actions → General → Allow GitHub Actions to create and approve pull
-requests* to be enabled.
-
-## Repo consolidation runbook
-
-> [!NOTE]
-> This section describes a one-off migration that has **not been carried out yet**.
-> Delete it once it has.
-
-Historically the source lived in `ghurault/personal-website` and a workflow pushed the
-built HTML to `ghurault/ghurault.github.io`, which GitHub served at the root URL. The
-template's own workflows publish the repo they live in, so to keep the root URL *and*
-use them unmodified, the source needs to move into `ghurault.github.io`.
-
-1. Merge this work into local `main` without pushing.
-2. Push `main` to the user-page repo. Its current `master` holds only generated HTML,
-   which is fully reproducible, but this leaves it untouched as a fallback:
-
-   ```bash
-   git remote add ghio git@github.com:ghurault/ghurault.github.io.git
-   git push ghio main
-   ```
-
-3. In `ghurault/ghurault.github.io`: **Settings → Branches → Default branch** → `main`.
-4. **Settings → Pages → Build and deployment → Source** → *GitHub Actions*. Nothing
-   about the live site changes until this step.
-5. **Settings → Actions → General** → enable *Allow GitHub Actions to create and
-   approve pull requests*, for `upgrade.yml`.
-6. Watch the *Deploy website to GitHub Pages* run, then check
-   <https://ghurault.github.io/>.
-7. Delete the stale `master` branch there.
-8. Delete the `TOKEN` secret from both repos and revoke the personal access token.
-9. Archive `ghurault/personal-website`, with a README pointing at the new home.
-10. Update `hugoblox.repository.url` in `config/_default/params.yaml` — there is a
-    `TODO` on it.
-11. Re-point the local clone: `git branch -u ghio/main main`.
-
-Note that section URLs changed with the template upgrade: `/publication/…`,
-`/project/…` and `/talk/…` are now `/publications/…`, `/projects/…` and `/events/…`,
-with no redirects.
+_Settings → Actions → General → Allow GitHub Actions to create and approve pull
+requests_ to be enabled.
 
 ## License
 

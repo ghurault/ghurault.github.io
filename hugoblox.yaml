@@ -1,7 +1,12 @@
 build:
   # Read by .github/workflows/build.yml and mirrored by the tag in
   # .devcontainer/Dockerfile - keep the two in sync.
-  hugo_version: '0.162.0'
+  #
+  # NOT 0.162.0 (which is what the upstream template pins): in 0.162.0 the
+  # `dict` function returns a nil map when called with no arguments, which makes
+  # the blox module's functions/build_links.html panic with "assignment to entry
+  # in nil map" on any page that has a `links` entry. Fixed in Hugo 0.163.0.
+  hugo_version: '0.164.0'
 deploy:
   # Deployment target: github-pages, netlify, vercel, cloudflare, or none
   host: 'github-pages'

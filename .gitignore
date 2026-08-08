@@ -28,6 +28,10 @@ hugo_stats.json
 # Dependencies
 node_modules/
 
+# pnpm falls back to a project-local content-addressable store when its global
+# store is on a different filesystem, which is the case inside the devcontainer.
+.pnpm-store/
+
 # ============================================================================
 # Environment & Configuration
 # ============================================================================

@@ -17,11 +17,12 @@
     }
   },
 
-  // Persist the pnpm store and the Go module cache (which is where Hugo caches
-  // its modules) so rebuilding the container doesn't re-download everything.
+  // Persist Hugo's cache (where Hugo Modules are downloaded) across container
+  // rebuilds. pnpm needs no volume: because the workspace is a bind mount on a
+  // different filesystem to the container's home, pnpm keeps its store in the
+  // workspace itself (.pnpm-store/, gitignored), which already persists.
   "mounts": [
-    "source=personal-website-pnpm,target=/root/.local/share/pnpm,type=volume",
-    "source=personal-website-gomod,target=/root/go/pkg/mod,type=volume"
+    "source=personal-website-hugo-cache,target=/root/.cache/hugo_cache,type=volume"
   ],
 
   "customizations": {

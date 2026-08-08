@@ -1,0 +1,10 @@
+build:
+  # Read by .github/workflows/build.yml and mirrored by the tag in
+  # .devcontainer/Dockerfile - keep the two in sync.
+  hugo_version: '0.162.0'
+deploy:
+  # Deployment target: github-pages, netlify, vercel, cloudflare, or none
+  host: 'github-pages'
+template:
+  id: "academic-cv"
+  name: "Academic CV"

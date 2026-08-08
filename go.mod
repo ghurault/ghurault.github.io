@@ -1,9 +1,5 @@
 module github.com/ghurault/personal-website
 
-go 1.15
+go 1.19
 
-require (
-	github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5 v5.9.7
-	github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v1.1.2
-	github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-reveal v1.2.3
-)
+require github.com/HugoBlox/kit/modules/blox v0.0.0-20260527025321-61f41d3667f1

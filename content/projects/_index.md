@@ -9,6 +9,8 @@ sections:
   - block: collection
     content:
       title: Projects
+      # 0 = show all. The block otherwise defaults to 5.
+      count: 0
       filters:
         folders:
           - projects

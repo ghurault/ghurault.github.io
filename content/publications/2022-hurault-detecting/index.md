@@ -1,20 +1,19 @@
 ---
-# Documentation: https://sourcethemes.com/academic/docs/managing-content/
-
 title: "Detecting eczema areas in digital images: an impossible task?"
 authors: ["admin", "K. Pan", "R. Mokhtari", "B. Olabi", "E. Earp", "L. Steele", "H. C. Williams", "R. J. Tanaka"]
 date: 2022-03-09
-doi: "10.1016/j.xjidi.2022.100133"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2022-03-09
 
-# Publication type.
+# Publication type, from the CSL standard.
 publication_types: ["article-journal"]
 
-# Publication name and optional abbreviated publication name.
-publication: "JID Innovations"
-publication_short: ""
+publication:
+  name: "JID Innovations"
+  volume: 2
+  issue: 5
+  pages: "100133"
 
 abstract: "
 Assessing the severity of atopic dermatitis (AD, or eczema) traditionally relies on a face-to-face assessment by healthcare professionals, and may suffer from inter- and intra-rater variability.
@@ -34,43 +33,16 @@ Such limitations need to be taken into consideration when the AD segmentation da
 summary: ""
 
 tags: []
-categories: []
 featured: true
 
-# Custom links (optional).
-#   Uncomment and edit lines below to show custom links.
+hugoblox:
+  ids:
+    doi: 10.1016/j.xjidi.2022.100133
+
 links:
-- name: MedRxiv
-  url: https://doi.org/10.1101/2022.03.03.22271780
-
-url_pdf:
-url_code: https://github.com/ghurault/IRR-eczema-images
-url_dataset:
-url_poster:
-url_project:
-url_slides:
-url_source:
-url_video:
-
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-image:
-  caption: ""
-  focal_point: ""
-  preview_only: false
-
-# Associated Projects (optional).
-#   Associate this publication with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `internal-project` references `content/project/internal-project/index.md`.
-#   Otherwise, set `projects: []`.
-projects: []
-
-# Slides (optional).
-#   Associate this publication with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides: "example"` references `content/slides/example/index.md`.
-#   Otherwise, set `slides: ""`.
-slides: ""
+  - type: code
+    url: "https://github.com/ghurault/IRR-eczema-images"
+  - type: preprint
+    url: "https://doi.org/10.1101/2022.03.03.22271780"
+    label: medRxiv
 ---

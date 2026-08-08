@@ -1,20 +1,19 @@
 ---
-# Documentation: https://sourcethemes.com/academic/docs/managing-content/
-
 title: "Evaluation of measurement errors in the Patient-Oriented Eczema Measure (POEM) outcome"
 authors: ["A. Duverdier", "admin", "K. Thomas", "A. Custovic", "R.J. Tanaka"]
 date: 2024-01-02
-doi: "10.1111/cea.14441"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2024-01-02
 
-# Publication type.
+# Publication type, from the CSL standard.
 publication_types: ["article-journal"]
 
-# Publication name and optional abbreviated publication name.
-publication: "Clinical and Experimental Allergy"
-publication_short: "Clinical and Experimental Allergy"
+publication:
+  name: "Clinical and Experimental Allergy"
+  volume: 54
+  issue: 3
+  pages: "207-215"
 
 abstract: "
 **Background**: The Patient-Oriented Eczema Measure (POEM) is the recommended core outcome instrument for atopic dermatitis (AD) symptoms.
@@ -38,40 +37,13 @@ Recall errors should be considered when interpreting POEM scores. More research 
 "
 
 tags: ["atopic dermatitis", "measurement error", "POEM", "recall bias", "recall noise"]
-categories: []
 featured: true
 
-# Custom links (optional).
-#   Uncomment and edit lines below to show custom links.
+hugoblox:
+  ids:
+    doi: 10.1111/cea.14441
 
-url_pdf:
-url_code: "https://github.com/arianeduverdier/POEM-recall-error"
-url_dataset:
-url_poster:
-url_project:
-url_slides:
-url_source:
-url_video:
-
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-image:
-  caption: ""
-  focal_point: ""
-  preview_only: false
-
-# Associated Projects (optional).
-#   Associate this publication with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `internal-project` references `content/project/internal-project/index.md`.
-#   Otherwise, set `projects: []`.
-projects: []
-
-# Slides (optional).
-#   Associate this publication with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides: "example"` references `content/slides/example/index.md`.
-#   Otherwise, set `slides: ""`.
-slides: ""
+links:
+  - type: code
+    url: "https://github.com/arianeduverdier/POEM-recall-error"
 ---

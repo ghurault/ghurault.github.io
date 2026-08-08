@@ -28,6 +28,8 @@ sections:
     id: projects
     content:
       title: Projects
+      # 0 = show all. The block otherwise defaults to 5.
+      count: 0
       filters:
         folders:
           - projects
@@ -46,6 +48,7 @@ sections:
       text: |-
         > [!NOTE]
         > Browse the [full list of publications](/publications/).
+      count: 5
       filters:
         folders:
           - publications

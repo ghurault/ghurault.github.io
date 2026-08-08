@@ -141,7 +141,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   analytics:
     google:
-      measurement_id: "G-DYGYFM7T03" # Google Analytics 4: G-XXXXXXXXXX
+      measurement_id: "" # Google Analytics 4: G-XXXXXXXXXX
 
   # ────────────────────────────────────────────────────────────────────────────
   # VERIFICATION
@@ -171,6 +171,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   # PRIVACY
   # ────────────────────────────────────────────────────────────────────────────
+  # Unused in practice: no analytics, so no cookies or anything to anonymise
   privacy:
     enable: true
     anonymize_analytics: true

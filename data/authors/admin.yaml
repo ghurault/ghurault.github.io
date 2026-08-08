@@ -1,0 +1,55 @@
+schema: hugoblox/author/v1
+slug: admin
+is_owner: true
+
+name:
+  display: Guillem Hurault
+  given: Guillem
+  family: Hurault
+
+role: Senior Data Scientist
+
+bio: |
+  I am a Senior Data Scientist working in sports analytics developing statistical and Machine Learning models to predict the outcome of sports events.
+
+  Before this, I worked as a Data Scientist in the renewable energy sector to forecast electricity demand, generation and prices.
+  I started my career as a researcher at [Imperial College London](https://imperial.ac.uk/) in the [Biological Control Systems Lab](https://www.rtanakagroup.com/), developing predictive models for eczema.
+
+# Social / academic networking.
+# Icons are namespaced: hero/*, brands/*, academicons/*.
+# See the blox module's data/icons/ for the available names.
+links:
+  - icon: hero/envelope
+    url: /contact/
+    label: Contact me
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/ghurault/
+  - icon: brands/github
+    url: https://github.com/ghurault
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=Jjv2KGQAAAAJ&hl
+  - icon: academicons/cv
+    url: uploads/cv.pdf
+    label: CV
+
+interests:
+  - Statistics & Machine Learning
+  - Bayesian modelling
+  - Time-series forecasting
+  - Decision analysis
+  - MLOps
+  - Software Engineering
+
+education:
+  - degree: PhD in Statistical Machine Learning
+    institution: Imperial College London (UK)
+    year: 2022
+  - degree: Master in Engineering
+    institution: Ecole Centrale de Lyon (FR)
+    year: 2018
+  - degree: MSc in Biomedical Engineering
+    institution: Imperial College London (UK)
+    year: 2017
+  - degree: Bachelor in Economics
+    institution: Université Lyon 2 (FR)
+    year: 2016

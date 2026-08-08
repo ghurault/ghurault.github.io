@@ -156,9 +156,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   repository:
     enable: true
-    # TODO: change to https://github.com/ghurault/ghurault.github.io once the
-    # repos are consolidated (see the migration runbook in README.md).
-    url: 'https://github.com/ghurault/personal-website'
+    url: "https://github.com/ghurault/ghurault.github.io"
     branch: main
     content_dir: content
 

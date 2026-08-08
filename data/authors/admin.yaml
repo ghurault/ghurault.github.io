@@ -18,16 +18,23 @@ bio: |
 # Social / academic networking.
 # Icons are namespaced: hero/*, brands/*, academicons/*.
 # See the blox module's data/icons/ for the available names.
+#
+# Note: `label` becomes the link's `title` (hover tooltip). The resume-biography-3
+# block hard-codes `aria-label` to the icon name, so screen readers announce e.g.
+# "brands/linkedin" regardless of what is set here - an upstream issue.
 links:
   - icon: hero/envelope
     url: /contact/
     label: Contact me
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/ghurault/
+    label: LinkedIn
   - icon: brands/github
     url: https://github.com/ghurault
+    label: GitHub
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=Jjv2KGQAAAAJ&hl
+    label: Google Scholar
   - icon: academicons/cv
     url: uploads/cv.pdf
     label: CV

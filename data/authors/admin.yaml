@@ -10,10 +10,11 @@ name:
 role: Senior Data Scientist
 
 bio: |
-  I am a Senior Data Scientist working in sports analytics developing statistical and Machine Learning models to predict the outcome of sports events.
+  I build probabilistic models of noisy real-world systems to improve decision making.
+  Right now that means forecasting the outcome of sports events; previously it was electricity demand and prices, and before that the progression of eczema severity in patients.
 
-  Before this, I worked as a Data Scientist in the renewable energy sector to forecast electricity demand, generation and prices.
-  I started my career as a researcher at [Imperial College London](https://imperial.ac.uk/) in the [Biological Control Systems Lab](https://www.rtanakagroup.com/), developing predictive models for eczema.
+  In particular, I developed expertise in Bayesian modelling, time-series forecasting, and decision analysis.
+  I am also interested in the engineering around models, in order to deploy reproducible, maintainable, and well-tested solutions in production.
 
 # Social / academic networking.
 # Icons are namespaced: hero/*, brands/*, academicons/*.

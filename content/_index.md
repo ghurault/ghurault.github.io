@@ -12,9 +12,9 @@ sections:
       # A profile in `data/authors/`
       username: admin
       text: ''
-      button:
-        text: CV
-        url: uploads/cv.pdf
+      # No `button:` here on purpose - the CV is already reachable from the
+      # academicons/cv icon under the avatar (data/authors/admin.yaml) and from
+      # the navbar, so a third link below the summary is redundant.
     design:
       # Plain background, closer to the previous site than the default mesh.
       background:

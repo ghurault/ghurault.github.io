@@ -1,6 +1,6 @@
 ---
 # Leave the homepage title empty to use the site title
-title: ''
+title: ""
 date: 2022-10-24
 type: landing
 
@@ -11,7 +11,7 @@ sections:
     content:
       # A profile in `data/authors/`
       username: admin
-      text: ''
+      text: ""
       # No `button:` here on purpose - the CV is already reachable from the
       # academicons/cv icon under the avatar (data/authors/admin.yaml) and from
       # the navbar, so a third link below the summary is redundant.
@@ -45,9 +45,6 @@ sections:
     id: publications
     content:
       title: Selected Publications
-      text: |-
-        > [!NOTE]
-        > Browse the [full list of publications](/publications/).
       count: 5
       filters:
         folders:

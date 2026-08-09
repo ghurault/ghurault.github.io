@@ -34,6 +34,9 @@ sections:
         folders:
           - projects
         featured_only: true
+      archive:
+        enable: true
+        text: View All Projects
     design:
       view: article-grid
       columns: 3

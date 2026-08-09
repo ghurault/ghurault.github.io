@@ -4,6 +4,8 @@ summary: "Towards a data-driven personalised management of Atopic Dermatitis sev
 authors: ["admin"]
 date: 2022-06-01
 
+featured: true
+
 # Clicking the card opens this URL directly, in place of a detail page.
 external_link: "https://hdl.handle.net/10044/1/105985"
 
@@ -41,22 +43,27 @@ In conclusion, we have demonstrated the feasibility and the challenges of a data
 
 ## References
 
-[^2020-eczemanet]: [K. Pan,  **G. Hurault**, K. Arulkumaran, H. Williams and R. J. Tanaka,
-"EczemaNet: Automating Detection and Assessment of Atopic Dermatitis",
-*International Workshop on Machine Learning in Medical Imaging*, 2020](https://doi.org/10.1007/978-3-030-59861-7_23)
+[^2020-eczemanet]:
+    [K. Pan, **G. Hurault**, K. Arulkumaran, H. Williams and R. J. Tanaka,
+    "EczemaNet: Automating Detection and Assessment of Atopic Dermatitis",
+    _International Workshop on Machine Learning in Medical Imaging_, 2020](https://doi.org/10.1007/978-3-030-59861-7_23)
 
-[^2020-mechanistic-ml]: [**G. Hurault**, E. Domínguez-Hüttinger, S. M. Langan, H. C. Williams and R. J. Tanaka,
-"Personalised prediction of daily eczema severity scores using a mechanistic machine learning model",
-*Clinical \& Experimental Allergy*, vol. 50, no. 11, pp. 1258–1266, 2020](https://doi.org/10.1111/cea.13717)
+[^2020-mechanistic-ml]:
+    [**G. Hurault**, E. Domínguez-Hüttinger, S. M. Langan, H. C. Williams and R. J. Tanaka,
+    "Personalised prediction of daily eczema severity scores using a mechanistic machine learning model",
+    _Clinical \& Experimental Allergy_, vol. 50, no. 11, pp. 1258–1266, 2020](https://doi.org/10.1111/cea.13717)
 
-[^2020-ssm-biomarkers]: [**G. Hurault**, E. Roekevisch, M.E. Schram, K. Szegedi, S. Kezic, M.A. Middelkamp-Hup, P.I. Spuls and R. J. Tanaka,
-"Can serum biomarkers predict the outcome of systemic immunosuppressive therapy in adult atopic dermatitis patients?",
-*Skin and Health Disease*, vol. 2, no. 1, p. e77, 2022.](https://doi.org/10.1002/ski2.77)
+[^2020-ssm-biomarkers]:
+    [**G. Hurault**, E. Roekevisch, M.E. Schram, K. Szegedi, S. Kezic, M.A. Middelkamp-Hup, P.I. Spuls and R. J. Tanaka,
+    "Can serum biomarkers predict the outcome of systemic immunosuppressive therapy in adult atopic dermatitis patients?",
+    _Skin and Health Disease_, vol. 2, no. 1, p. e77, 2022.](https://doi.org/10.1002/ski2.77)
 
-[^2020-pollution]: [**G. Hurault**, V. Delorieux, Y-M. Kim, K. Ahn, H. Williams and R. J. Tanaka,
-"Impact of environmental factors in predicting daily severity scores of atopic dermatitis",
-*Clinical and Translational Allergy, vol. 11, no. 2*, 2021](https://doi.org/10.1002/clt2.12019)
+[^2020-pollution]:
+    [**G. Hurault**, V. Delorieux, Y-M. Kim, K. Ahn, H. Williams and R. J. Tanaka,
+    "Impact of environmental factors in predicting daily severity scores of atopic dermatitis",
+    _Clinical and Translational Allergy, vol. 11, no. 2_, 2021](https://doi.org/10.1002/clt2.12019)
 
-[^2022-eczemapred]: [**G. Hurault**, J-F Stalder, S. Mery, A. Delarue, M. Saint Aroma, G. Josse and R. J. Tanaka,
-"EczemaPred: A computational framework for personalised prediction of eczema severity dynamics",
-*Clinical and Translational Allergy*, 2022, vol. 12, no. 3, p. e12140.](https://doi.org/10.1002/clt2.12140)
+[^2022-eczemapred]:
+    [**G. Hurault**, J-F Stalder, S. Mery, A. Delarue, M. Saint Aroma, G. Josse and R. J. Tanaka,
+    "EczemaPred: A computational framework for personalised prediction of eczema severity dynamics",
+    _Clinical and Translational Allergy_, 2022, vol. 12, no. 3, p. e12140.](https://doi.org/10.1002/clt2.12140)

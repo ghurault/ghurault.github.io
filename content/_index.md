@@ -27,15 +27,16 @@ sections:
   - block: collection
     id: projects
     content:
-      title: Projects
+      title: Featured Projects
       # 0 = show all. The block otherwise defaults to 5.
-      count: 0
+      count: 6
       filters:
         folders:
           - projects
+        featured_only: true
     design:
       view: article-grid
-      columns: 2
+      columns: 3
       fill_image: false
       show_date: false
       show_read_time: false

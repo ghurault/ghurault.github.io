@@ -19,7 +19,7 @@ url_slides: ""
 url_video: ""
 
 # Pin to top of listings
-featured: true
+featured: false
 
 # Draft
 draft: false
